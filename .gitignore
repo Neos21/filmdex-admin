@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+
+*.log
+
+node_modules/
+
+# `.example` ファイルは残して実際のファイルは管理対象外とする
+.env
+inputs/credentials.json
+inputs/token.json
+inputs/films.jsonc

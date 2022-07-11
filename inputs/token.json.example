@@ -1,0 +1,53 @@
+// Google Sheets API を使うために生成する Token JSON ファイルのサンプル
+{
+  "tokens": {
+    "access_token": "【Access Token】",
+    "refresh_token": "【Refresh Token】",
+    "scope": "https://www.googleapis.com/auth/spreadsheets",
+    "token_type": "Bearer",
+    "expiry_date": 1000000000000
+  },
+  "res": {
+    "config": {
+      "method": "POST",
+      "url": "https://oauth2.googleapis.com/token",
+      "data": "code=【Code】&client_id=【Client ID】&client_secret=【Client Secret】&redirect_uri=http%3A%2F%2Flocalhost&grant_type=authorization_code&code_verifier=",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "google-api-nodejs-client/7.14.1",
+        "x-goog-api-client": "gl-node/14.16.1 auth/7.14.1",
+        "Accept": "application/json"
+      },
+      "body": "code=【Code】&client_id=【Client ID】&client_secret=【Client Secret】&redirect_uri=http%3A%2F%2Flocalhost&grant_type=authorization_code&code_verifier=",
+      "responseType": "json"
+    },
+    "data": {
+      "access_token": "【Access Token】",
+      "refresh_token": "【Refresh Token】",
+      "scope": "https://www.googleapis.com/auth/spreadsheets",
+      "token_type": "Bearer",
+      "expiry_date": 1000000000000
+    },
+    "headers": {
+      "alt-svc": "h0=\":000\"; ma=0000000,h0-00=\":000\"; ma=0000000,h0-Q000=\":000\"; ma=0000000,h0-Q000=\":000\"; ma=0000000,h0-Q000=\":000\"; ma=0000000,quic=\":000\"; ma=0000000; v=\"00,00\"",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "connection": "close",
+      "content-encoding": "gzip",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Sun, 01 Jan 2022 00:00:00 GMT",
+      "expires": "Sun, 01 Jan 1990 00:00:00 GMT",
+      "pragma": "no-cache",
+      "server": "scaffolding on HTTPServer2",
+      "transfer-encoding": "chunked",
+      "vary": "Origin, X-Origin, Referer",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "0"
+    },
+    "status": 200,
+    "statusText": "OK",
+    "request": {
+      "responseURL": "https://oauth2.googleapis.com/token"
+    }
+  }
+}

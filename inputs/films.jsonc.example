@@ -1,0 +1,18 @@
+/**
+ * 追加する映画情報を記した JSONC ファイルのサンプル・テンプレート
+ * 
+ * JSONC 形式なので、コメント記法、末尾カンマを付与しても問題ない
+ * 項目の必須チェックはほぼ実装していないが `publishedYear`・`title` 以降はプロパティごと存在しなくても空白セルとして登録できる
+ */
+[
+  {
+    "publishedYear": 1900,
+    "title"        : "Test Title",
+    "japaneseTitle": "テストタイトル",
+    "scenario"     : "TEST あらすじ",
+    "review"       : "TEST 感想",
+    "casts"        : "TEST キャスト",
+    "staffs"       : "TEST スタッフ",
+    "tags"         : "TEST タグ"
+  },
+]
