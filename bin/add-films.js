@@ -80,10 +80,11 @@ const filmsJsoncFilePath = path.resolve(__dirname, '../inputs/films.jsonc');
     return logUtils.finishedLog(functionName);
   }
   
-  console.log(`- Spread Sheet ID : ${spreadsheetId}`);
-  console.log(`- Sheet Title     : ${sheetTitle}`);
-  console.log(`- Sheet ID        : ${sheetId}`);
-  console.log(`- Number To Add   : ${newFilms.length}`);
+  console.log(`- Spread Sheet ID  : ${spreadsheetId}`);
+  console.log(`- Sheet Title      : ${sheetTitle}`);
+  console.log(`- Spread Sheet URL : https://docs.google.com/spreadsheets/d/${spreadsheetId}/`);
+  console.log(`- Sheet ID         : ${sheetId}`);
+  console.log(`- Number To Add    : ${newFilms.length}`);
   console.log('');
   
   // `y` を入力すれば開始、`all` を入力すれば1件ずつの確認をせず全件一気に登録する

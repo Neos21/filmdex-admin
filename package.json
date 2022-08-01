@@ -3,7 +3,11 @@
   "private": true,
   "description": "FilmDeX Admin Tools",
   "scripts": {
+    "a"     : "node ./bin/add-films.js",
     "add"   : "node ./bin/add-films.js",
+    
+    "start" : "node ./bin/search-films.js",
+    "s"     : "node ./bin/search-films.js",
     "search": "node ./bin/search-films.js"
   },
   "author": "Neo <neos21@gmail.com> (https://neos21.net/)",

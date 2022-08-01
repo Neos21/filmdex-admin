@@ -18,9 +18,11 @@ const tmdbApiKey = process.env.TMDB_API_KEY;
   }
   
   // 第1引数で指定があればその値を使用する・そうでなければ入力プロンプトを表示する
-  const argValue = process.argv[2] ?? '';
-  let searchText = String(argValue).trim();
-  if(searchText === '') {
+  let searchText = String(process.argv[2] ?? '').trim();
+  if(searchText !== '') {
+    searchText = process.argv.slice(2).join(' ').trim();
+  }
+  else {
     searchText = await readText('Please Input Search Text');  // Trim 済
     console.log('');
     if(searchText === '') {
