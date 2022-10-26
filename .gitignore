@@ -10,3 +10,5 @@ node_modules/
 inputs/credentials.json
 inputs/token.json
 inputs/films.jsonc
+
+outputs/*

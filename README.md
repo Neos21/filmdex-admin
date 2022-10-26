@@ -7,12 +7,12 @@
 
 [TMDB](https://www.themoviedb.org/?language=ja) API を利用して映画情報を検索する。API Key は TMDB にアカウント登録することで発行できるので、環境変数ファイル `.env` に定義しておく。
 
-検索結果はコンソール出力のみ。適宜手動で `films.jsonc` にコピペし加筆修正する。
+検索結果はコンソール出力のみ。適宜手動で `inputs/films.jsonc` にコピペし加筆修正する。
 
 
 ## `$ npm run add`
 
-FilmDeX の Google Sheets に複数の映画情報を一括登録する。以下の手順で `credentials.json` と `token.json` を用意し、Google Sheets 情報を `.env` ファイルに定義しておく。`films.jsonc` に書かれた映画情報を一括登録する。
+FilmDeX の Google Sheets に複数の映画情報を一括登録する。以下の手順で `inputs/credentials.json` と `inputs/token.json` を用意し、Google Sheets 情報を `.env` ファイルに定義しておく。`inputs/films.jsonc` に書かれた映画情報を一括登録する。
 
 ### Google Sheets API を利用するための OAuth2 Client の作成手順
 
@@ -22,9 +22,16 @@ FilmDeX の Google Sheets に複数の映画情報を一括登録する。以下
 4. 「OAuth クライアント ID の作成」画面
     - アプリケーションの種類 : デスクトップ アプリ
     - 名前 : 任意
-5. Client ID、Client Secret が発行される。その画面で `credentials.json` に相当する JSON ファイル (`client_secret_xxx.json`) がダウンロードできる
+5. Client ID、Client Secret が発行される。その画面で `inputs/credentials.json` に相当する JSON ファイル (`client_secret_xxx.json`) がダウンロードできる
 
-スクリプトの初回実行時、ブラウザアクセスで認証コードを発行し、その認証コードをプロンプトに貼り付けることで Access Token を発行し `token.json` ファイルに控えておく流れになる。
+スクリプトの初回実行時、ブラウザアクセスで認証コードを発行し、その認証コードをプロンプトに貼り付けることで Access Token を発行し `inputs/token.json` ファイルに控えておく流れになる。
+
+
+## `$ npm run get`
+
+FilmDeX の Google Sheets の内容を取得する。上述の `npm run add` 内の処理の一部を流用している。
+
+取得したファイルは `outputs/filmdex.json` に出力される。
 
 
 ## Links

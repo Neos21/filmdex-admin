@@ -6,7 +6,9 @@
     "a"     : "node ./bin/add-films.js",
     "add"   : "node ./bin/add-films.js",
     
-    "start" : "node ./bin/search-films.js",
+    "g"     : "node ./bin/get-sheet.js",
+    "get"   : "node ./bin/get-sheet.js",
+    
     "s"     : "node ./bin/search-films.js",
     "search": "node ./bin/search-films.js"
   },
